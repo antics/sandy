@@ -2,6 +2,10 @@ sandy - simple ncurses text editor
 ==================================
 sandy is a simple ncurses text editor.
 
+Modyfications by antics
+-----------------------
+tabstop = 3
+HIGHLIGHT_CURRENT = 0
 
 Requirements
 ------------
