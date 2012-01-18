@@ -1,0 +1,19 @@
+In no particular order, at sandy.c:
+- Update manpage
+- Create m_*vline
+- Bracket matching?
+- Number modifier?
+- Smart end? is it really needed?
+- BUG: high CPU usage on continuous resize
+- BUG: Deal with the bigger-than-window line
+- Improve regex search (backwards!!)
+- Improve syntax highlight, multiline?
+- Group delete undos?
+
+At config.def.h:
+- Bindings!
+- Use local/system script path and all
+- Choose color-set for either black of white bg
+- Define more syntaxes
+- Refine syntax regexes
+
