@@ -1,11 +1,11 @@
 sandy - simple ncurses text editor
 ==================================
-sandy is a simple ncurses text editor.
+sandy is a simple ncurses text editor. Read more at http://tools.suckless.org/sandy.
 
 Modyfications by antics
 -----------------------
-* tabstop = 3
 * HIGHLIGHT_CURRENT = 0
+* Copied C highlighting as template for Javascript
 
 Requirements
 ------------

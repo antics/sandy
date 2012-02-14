@@ -7,7 +7,7 @@
 /* Things unlikely to be changed, yet still in the config.h file */
 static const bool   isutf8     = TRUE;
 static const char   fifobase[] = "/tmp/sandyfifo.";
-static       int    tabstop    = 3; /* Not const, as it may be changed via param */
+static       int    tabstop    = 8; /* Not const, as it may be changed via param */
 /* static const char   systempath[]  = "/etc/sandy"; */
 /* static const char   userpath[]    = ".sandy"; */ /* Relative to $HOME */
 
@@ -204,6 +204,17 @@ static const Command cmds[] = { /* REMEMBER: if(arg == 0) arg.v=regex_match */
 static const Syntax syntaxes[] = {
 #if HILIGHT_SYNTAX
 {"c", "\\.(c(pp|xx)?|h(pp|xx)?|cc)$", {
+	/* HiRed   */  "",
+	/* HiGreen */  B"(for|if|while|do|else|case|default|switch|try|throw|catch|operator|new|delete)"B,
+	/* LoGreen */  B"(float|double|bool|char|int|short|long|sizeof|enum|void|static|const|struct|union|typedef|extern|(un)?signed|inline|((s?size)|((u_?)?int(8|16|32|64|ptr)))_t|class|namespace|template|public|protected|private|typename|this|friend|virtual|using|mutable|volatile|register|explicit)"B,
+	/* HiMag   */  B"(goto|continue|break|return)"B,
+	/* LoMag   */  "(^#(define|include(_next)?|(un|ifn?)def|endif|el(if|se)|if|warning|error|pragma))|"B"[A-Z_][0-9A-Z_]+"B"",
+	/* HiBlue  */  "(\\(|\\)|\\{|\\}|\\[|\\])",
+	/* LoRed   */  "(\"(\\\\.|[^\"])*\")",
+	/* LoBlue  */  "(//.*|/\\*([^*]|\\*[^/])*\\*/|/\\*([^*]|\\*[^/])*$|^([^/]|/[^*])*\\*/)",
+	} },
+
+{"js", "\\.js|json$", {
 	/* HiRed   */  "",
 	/* HiGreen */  B"(for|if|while|do|else|case|default|switch|try|throw|catch|operator|new|delete)"B,
 	/* LoGreen */  B"(float|double|bool|char|int|short|long|sizeof|enum|void|static|const|struct|union|typedef|extern|(un)?signed|inline|((s?size)|((u_?)?int(8|16|32|64|ptr)))_t|class|namespace|template|public|protected|private|typename|this|friend|virtual|using|mutable|volatile|register|explicit)"B,
