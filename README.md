@@ -1,6 +1,8 @@
 sandy - simple ncurses text editor
 ==================================
-sandy is a simple ncurses text editor. Read more at http://tools.suckless.org/sandy.
+sandy is a simple ncurses text editor. Read more at ~~http://tools.suckless.org/sandy~~, https://neosmart.net/blog/2017/what-happened-to-the-sandy-text-editor/.
+
+Apparently the sandy editor got sacked from the Suckless tool chest. You can find a fork with more recent commits here: https://github.com/japanoise/sandy
 
 Modyfications by antics
 -----------------------
